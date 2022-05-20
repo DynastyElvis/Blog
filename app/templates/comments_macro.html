@@ -22,7 +22,23 @@
         <h3 style="text-align: center;">Comments section</h3>
         {% if allcomments %}
         {% for comment in allcomments %}
-       
+        <div class="card">
+            <div class="card-header">
+                {{comment.nickname}}
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>{{comment.content}}</p>
+                    <footer class="blockquote-footer">Posted on:<cite
+                            title="Source Title">{{comment.date.strftime('%Y-%m-%d')}}</cite>
+                    </footer>
+                    <a href="/remove/{{comment.id}}" class="btn btn-outline-danger btn-sm">delete</a>
+
+                    
+                </blockquote>
+            </div>
+            
+        </div>
     </div>  
 
     </div>
