@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            
+        <form method="POST">
+
+            <h2 style="text-align: center;">Create a blog,</h2>
+            <label>
+                <span>TITLE</span>
+                <input name="title" id="title" type="text" required/>
+            </label>
+            <label>
+                <span>CONTENT</span>
+                <input id="content" name="content" type="text" required/>
+            </label>
+            <label>
+                <span>AUTHOR</span>
+                <input id="author" name="author" type="text" required/>
+            </label>
+
+            <a style="text-decoration: none;" href="/blogs"><button type="submit" class="submit">POST BLOG</button></a>          
+            
+
+
+        </form>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock %}
+
+
