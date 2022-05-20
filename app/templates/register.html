@@ -36,7 +36,24 @@
                      
             <form method="POST" action="{{url_for('auth.signup')}}">
             <div class="form sign-up">
-              <button type="submit" class="submit">Sign Up</button>
+                <h2>Sign up, be one of us!</h2>
+                <label>
+                    <span>Username</span>
+                    <input name="username" id="username" type="text" required/>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input id="email" name="email" type="email" required/>
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input id="password1" name="password1" type="password" required/>
+                </label>
+                <label>
+                    <span>Confirm Password</span>
+                    <input id="password2" name="password2" type="password" required/>
+                </label>
+                <button type="submit" class="submit">Sign Up</button>
                 
             </div>
             </form>
