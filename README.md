@@ -3,7 +3,7 @@
 ## Built By [Kipkemoi Elvis](https://github.com/DynastyElvis)
 
 
-You can view the site at: [ My Blogpost Live Link](https://pitches-posts.herokuapp.com/ytidcdytic)
+You can view the site at: [ My Blogpost Live Link](https://elvis-blog-posts.herokuapp.com/)
 
 
 ## Screenshots
