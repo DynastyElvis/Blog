@@ -48,7 +48,7 @@ input, button {
   width: 900px;
   height: 100%;
   padding-left: 260px;
-  background: rgb(184,145,111);
+  background: rgb(111, 184, 174);
   transition: transform 1.2s ease-in-out;
 }
 .cont.s--signup .sub-cont {
@@ -83,7 +83,7 @@ button {
   top: 0;
   width: 900px;
   height: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
+  background-image: url("https://github.com/Andy3643/Student-Portal/blob/master/app/static/images/clay-banks-OcnokxBmwQg-unsplash.jpg");
   background-size: cover;
   transition: transform 1.2s ease-in-out;
 }
