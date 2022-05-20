@@ -25,3 +25,43 @@ def login():
         else:
             flash('email does not exist', category='error')
     return render_template('register.html', user=current_user)
+
+@auth.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('auth.login'))
+
+@auth.route('/signup',methods=['GET','POST'])
+def signup():    
+    
+    if request.method == 'POST':
+        email = request.form.get('email')
+        username= request.form.get('username')
+        password1 = request.form.get('password1')
+        password2 = request.form.get('password2')
+        
+        user = User.query.filter_by(email=email).first()
+        name = User.query.filter_by(username=username).first()
+        if user:
+            flash('email exists',category='error')        
+        elif name:
+            flash('username exists!',category='error')         
+        elif len(email) < 4:
+            flash('Email must be greater than 4 characters', category='error')
+        elif len(username) < 2:
+            flash('Username must be greater than 4 characters', category='error')
+        elif password1 != password2:
+            flash('Passwords don\'t match', category='error') 
+        elif len(password1) < 5:
+            flash('Password length should be more than 5', category='error')  
+            
+        else:
+            new_user = User(email=email,username=username,password=generate_password_hash(password1,method='sha256'))
+            db.session.add(new_user)
+            db.session.commit()
+            flash('Account created successfully', category='success')  
+            return redirect(url_for('auth.login'))           
+            
+    
+    return render_template('register.html',user=current_user)
