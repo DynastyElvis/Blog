@@ -7,6 +7,9 @@ You can view the site at: [ My Blogpost Live Link](https://pitches-posts.herokua
 
 
 ## Screenshots
+<img src="https://github.com/DynastyElvis/Blog/blob/master/app/static/images/Screenshot%20from%202022-05-20%2016-13-18.png" width="800px" height="400px">
+<img src="https://github.com/DynastyElvis/Blog/blob/master/app/static/images/Screenshot%20from%202022-05-20%2016-13-18.png" width="800px" height="400px">
+
 
 
 ## Description
