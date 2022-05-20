@@ -16,11 +16,6 @@ input, button {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-.tip {
-  font-size: 20px;
-  margin: 40px auto 50px;
-  text-align: center;
-}
 
 .cont {
   overflow: hidden;
@@ -28,7 +23,7 @@ input, button {
   width: 900px;
   height: 550px;
   margin: 0 auto 100px;
-  background: rgb(184,145,111);
+  background: rgb(38, 160, 60);
   margin-top: 2em;
 }
 
