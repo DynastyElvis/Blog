@@ -3,7 +3,18 @@
 <div class="container">    
     <div class="row">
     <div class="col-md-6">
-         
+         <form method="POST">
+             <h3 style="text-align: center;">Post a comment</h3>
+             <div class="mb-3">
+                 <label for="nickname">Nickname</label>
+                 <input type="text" id="nickname" name="nickname" placeholder="enter your nickname" required>
+             </div>
+             <div class="mb-3">
+                 <label for="content">comment</label>
+                 <input type="text" id="content" name="content" placeholder="enter your comment" required>
+             </div>
+             <a style="text-decoration: none;" href="/comments"><button type="submit"
+                     class="submit">Comment</button></a>
 
          </form>
     </div>
