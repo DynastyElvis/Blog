@@ -39,3 +39,11 @@ class Comment(db.Model):
     blog_id = db.Column(db.Integer, db.ForeignKey('blog.id'))
     
     
+class Quote:
+    '''
+    class for api quotes display
+    '''
+    def __init__(self,author,quote):
+        self.author = author
+        self.quote = quote
+    
