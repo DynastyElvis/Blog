@@ -15,3 +15,15 @@ class User(db.Model,UserMixin):
     blog = db.relationship('Blog',lazy='dynamic')
     
     
+class Blog(db.Model):
+    '''
+    create blog schema for the blog creation 
+    '''
+    id = db.Column(db.Integer, primary_key=True)
+    author = db.Column(db.String(255), nullable=False)
+    title = db.Column(db.String(100), nullable=False)
+    content = db.Column(db.String(255), nullable=False)
+    date = db.Column(db.DateTime(timezone=True), default=func.now())
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    comment = db.relationship('Comment', lazy='dynamic')
+    
